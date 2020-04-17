@@ -42,22 +42,23 @@ namespace NewArrayHelper
             }
         
         public static T[] Slice(T[] arr, int beginIndex = 0, int endIndex = 0){
-            if (beginIndex > arr.Length){
+            if (Math.Abs(beginIndex) > arr.Length || Math.Abs(beginIndex) > arr.Length){
                 T[] newArr = new T [0];
                 return newArr;
             }
-            else if (endIndex < 0 && beginIndex < 0){
-                endIndex = arr.Length + endIndex - 1;
-                beginIndex = arr.Length + beginIndex - 1;
+            if (endIndex < 0)
+                endIndex = arr.Length + endIndex;
+            if (beginIndex < 0 )
+                beginIndex = arr.Length + beginIndex ;
+            if (endIndex == 0)
+                endIndex = arr.Length ;
+            T[] newArr1 = new T [Math.Abs(endIndex - beginIndex)];
+            if(endIndex < beginIndex){
+                for (int i = beginIndex, j = 0; i > endIndex; i--, j++)
+                    newArr1[j] = arr[i];
             }
-            else if (beginIndex < 0 && endIndex == 0){
-                beginIndex = arr.Length - beginIndex - 1;
-                endIndex = arr.Length - 1;
-            }
-            T[] newArr1 = new T [endIndex - beginIndex];
-            for (int i = beginIndex, j = 0; i < endIndex; i++, j++){
-                newArr1[j] = arr[i];
-            }
+            else for (int i = beginIndex, j = 0; i < endIndex; i++, j++)
+                    newArr1[j] = arr[i];
             return newArr1;
 
         }

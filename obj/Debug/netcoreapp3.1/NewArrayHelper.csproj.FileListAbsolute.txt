@@ -1,0 +1,13 @@
+/home/sobira/Рабочий стол/c#/NewArrayHelper/bin/Debug/netcoreapp3.1/NewArrayHelper
+/home/sobira/Рабочий стол/c#/NewArrayHelper/bin/Debug/netcoreapp3.1/NewArrayHelper.deps.json
+/home/sobira/Рабочий стол/c#/NewArrayHelper/bin/Debug/netcoreapp3.1/NewArrayHelper.runtimeconfig.json
+/home/sobira/Рабочий стол/c#/NewArrayHelper/bin/Debug/netcoreapp3.1/NewArrayHelper.runtimeconfig.dev.json
+/home/sobira/Рабочий стол/c#/NewArrayHelper/bin/Debug/netcoreapp3.1/NewArrayHelper.dll
+/home/sobira/Рабочий стол/c#/NewArrayHelper/bin/Debug/netcoreapp3.1/NewArrayHelper.pdb
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.csprojAssemblyReference.cache
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.csproj.CoreCompileInputs.cache
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.AssemblyInfoInputs.cache
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.AssemblyInfo.cs
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.dll
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.pdb
+/home/sobira/Рабочий стол/c#/NewArrayHelper/obj/Debug/netcoreapp3.1/NewArrayHelper.genruntimeconfig.cache
