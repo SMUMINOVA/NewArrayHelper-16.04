@@ -41,6 +41,7 @@ namespace NewArrayHelper
             }
         
         public static T[] Slice(T[] arr, int beginIndex = 0, int endIndex = 0){
+
             if (Math.Abs(beginIndex) > arr.Length || Math.Abs(beginIndex) > arr.Length){
                 T[] newArr = new T [0];
                 return newArr;
@@ -60,6 +61,11 @@ namespace NewArrayHelper
                     newArr1[j] = arr[i];
             return newArr1;
 
+        }
+        public static void Show(T[] arr){
+            System.Console.WriteLine("Yours data: ");
+            foreach(T element in arr)
+                    System.Console.WriteLine(element);
         }
     }
 }

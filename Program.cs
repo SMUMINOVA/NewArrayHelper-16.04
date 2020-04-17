@@ -20,7 +20,7 @@ namespace NewArrayHelper
                     for (int i = 0; i < size; i++)
                         sarray[i] = Console.ReadLine();
                     start :
-                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.Create another array\n7.End your work");
+                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.See yours data\n7.Create another array\n8.End your work");
                     int newchoice = int.Parse(Console.ReadLine());
                     switch(newchoice){
                         case 1:{
@@ -59,8 +59,9 @@ namespace NewArrayHelper
                             foreach( string s in newArray)
                                    System.Console.WriteLine(s);
                         }; break;
-                        case 7: goto end;
-                        case 6: goto start1;
+                        case 8: goto end;
+                        case 6: ArrayHelper<string>.Show(sarray); break;
+                        case 7: goto start1;
                         default: {
                             Console.ForegroundColor = ConsoleColor.Red;
                             System.Console.WriteLine("Error such choice wasn'n foresee!!! Try again");
@@ -78,7 +79,7 @@ namespace NewArrayHelper
                     for (int i = 0; i < size; i++)
                         narray[i] = int.Parse(Console.ReadLine());
                     start :
-                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.Create another array\n7.End your work");
+                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.See yours data\n7.Create another array\n8.End your work");
                     int newchoice = int.Parse(Console.ReadLine());
                     switch(newchoice){
                         case 1:{
@@ -117,8 +118,9 @@ namespace NewArrayHelper
                             foreach( int s in newArray)
                                    System.Console.WriteLine(s);
                         }; break;
-                        case 7: goto end;
-                        case 6: goto start1;
+                        case 8: goto end;
+                        case 6: ArrayHelper<int>.Show(narray); break;
+                        case 7: goto start1;
                         default: {
                             Console.ForegroundColor = ConsoleColor.Red;
                             System.Console.WriteLine("Error such choice wasn'n foresee!!! Try again");
@@ -136,7 +138,7 @@ namespace NewArrayHelper
                     for (int i = 0; i < size; i++)
                         darray[i] = Convert.ToDouble(Console.ReadLine());
                     start :
-                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.Create another array\n7.End your work");
+                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.See yours data\n7.Create another array\n8.End your work");
                     int newchoice = int.Parse(Console.ReadLine());
                     switch(newchoice){
                         case 1:{
@@ -175,8 +177,9 @@ namespace NewArrayHelper
                             foreach( double s in newArray)
                                    System.Console.WriteLine(s);
                         }; break;
-                        case 7: goto end;
-                        case 6: goto start1;
+                        case 8: goto end;
+                        case 6: ArrayHelper<double>.Show(darray); break;
+                        case 7: goto start1;
                         default: {
                             Console.ForegroundColor = ConsoleColor.Red;
                             System.Console.WriteLine("Error such choice wasn'n foresee!!! Try again");
@@ -194,7 +197,7 @@ namespace NewArrayHelper
                     for (int i = 0; i < size; i++)
                         marray[i] = decimal.Parse(Console.ReadLine());
                     start :
-                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.Create another array\n7.End your work");
+                    System.Console.WriteLine("Now you can:\n1.Delete last element\n2.Add element to the end\n3.Delete first element\n4.Add element to beginning\n5.Slice part of your array\n6.See yours data\n7.Create another array\n8.End your work");
                     int newchoice = int.Parse(Console.ReadLine());
                     switch(newchoice){
                         case 1:{
@@ -233,8 +236,9 @@ namespace NewArrayHelper
                             foreach( decimal s in newArray)
                                    System.Console.WriteLine(s);
                         }; break;
-                        case 7: goto end;
-                        case 6: goto start1;
+                        case 8: goto end;
+                        case 6: ArrayHelper<decimal>.Show(marray);break;
+                        case 7: goto start1;
                         default: {
                             Console.ForegroundColor = ConsoleColor.Red;
                             System.Console.WriteLine("Error such choice wasn'n foresee!!! Try again");
