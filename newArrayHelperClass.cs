@@ -3,7 +3,6 @@ namespace NewArrayHelper
 {
     public static class ArrayHelper <T>
     {
-        //public static T[] arr{get; set;}
         public static T Pop(ref T[] arr){
                 T value = arr [arr.Length-1];
                 T[] newArr = new T [arr.Length-1];
